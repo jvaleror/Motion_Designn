@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viaje por el Disco</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- INTRODUCCIÓN -->
+  <section id="intro" class="section active">
+    <h1 class="intro-title">Viaje al Disco</h1>
+    <img src="vinilo.png" alt="Vinilo girando" class="spinning-vinyl">
+    <button id="startButton">Empezar...</button>
+  </section>
+
+  <!-- GALERÍA DE ÁLBUMES -->
+  <section id="gallery" class="section">
+    <button class="arrow left" id="prev">&#9664;</button>
+    <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <img src="chromakopia.jpg" class="album" data-album="chromakopia" data-title="Chromakopia">
+          <img src="thinktank.jpg" class="album" data-album="thinktank" data-title="Think Tank">
+          <img src="williehits.jpg" class="album" data-album="willie" data-title="Greatest Hits">
+        </div>
+      </div>
+      
+    <button class="arrow right" id="next">&#9654;</button>
+  </section>
+
+  <!-- DETALLE DEL ÁLBUM -->
+  <section id="detail" class="section">
+    <div class="album-detail" id="chromakopiaDetail">
+      <img src="chromakopia.gif" class="detail-cover animated">
+      <div class="info">
+        <h2>Chromakopia – Tyler, The Creator</h2>
+        <p><strong>Año:</strong> 2024</p>
+        <p><strong>Canciones destacadas:</strong> Like Him, St. Chroma, Sticky</p>
+        <p class="bio"><strong>Biografía:</strong> Chromakopia representa una etapa introspectiva con exploración visual y musical de Tyler.</p>
+      </div>
+      <audio class="album-audio" src="chromakopia.mp3" loop></audio>
+    </div>
+
+    <div class="album-detail" id="thinktankDetail">
+      <img src="thinktank.gif" class="detail-cover animated">
+      <div class="info">
+        <h2>Think Tank – Blur</h2>
+        <p><strong>Año:</strong> 2003</p>
+        <p><strong>Canciones destacadas:</strong> Out of Time, Crazy Beat</p>
+        <p class="bio"><strong>Biografía:</strong> Think Tank es un álbum experimental con influencias electrónicas y arte inspirado en Banksy.</p>
+      </div>
+      <audio class="album-audio" src="blur.mp3" loop></audio>
+    </div>
+
+    <div class="album-detail" id="willieDetail">
+      <img src="williehits.gif" class="detail-cover animated">
+      <div class="info">
+        <h2>Greatest Hits – Willie Colón</h2>
+        <p><strong>Año:</strong> 2008</p>
+        <p><strong>Canciones destacadas:</strong> Oh Que Sera?, Juanito Alimaña, El Gran Varón</p>
+        <p class="bio"><strong>Biografía:</strong> Esta recopilación reúne los éxitos más influyentes del maestro de la salsa neoyorquina.</p>
+      </div>
+      <audio class="album-audio" src="willie.mp3" loop></audio>
+    </div>
+
+    <button id="backToGallery">← Volver</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
